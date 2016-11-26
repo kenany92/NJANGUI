@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_test_njangui_entity_Comment" items="${comments}" z="HF1dgDIl/OpXu0Ul/kcCyHEeB4U=">
+        <table:table data="${comments}" id="l_com_test_njangui_entity_Comment" path="/comments" z="eEPr8E5zL8NrWZe2jSIF/5dFA4M=">
+            <table:column id="c_com_test_njangui_entity_Comment_title" property="title" z="yaA4nUc5XmW5nB63/w+oeKbYQzI="/>
+            <table:column id="c_com_test_njangui_entity_Comment_comment" property="comment" z="JQ8XQxi19seaCksD7Bs8ePXA98o="/>
+            <table:column date="true" dateTimePattern="${comment_commentdate_date_format}" id="c_com_test_njangui_entity_Comment_commentDate" property="commentDate" z="k5aPuLj3bMJ7XIRFZR92MSapiVk="/>
+            <table:column id="c_com_test_njangui_entity_Comment_name" property="name" z="VvRleKthH0fzsl54zaG2DIqdNyo="/>
+        </table:table>
+    </page:list>
+</div>
